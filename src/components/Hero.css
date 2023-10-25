@@ -1,0 +1,286 @@
+.Hero{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: var(--appColor); */
+}
+
+.left-h{
+    padding:2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+.right-h{
+    flex: 1;
+    background-color: var(--orange);
+    position: relative;
+}
+
+.the-best-ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color:white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title{
+    color: white;
+    z-index: 2;
+
+}
+.anm1{
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 5s;
+}
+@keyframes animate1{
+    0% {left:0px;top:6px}
+    100%{left: 200px;top:6px;}
+}
+.the-best-ad>div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius:3rem;
+    z-index: 1;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.hero-text>div:nth-of-type(3){
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+.figures{
+    display: flex;
+    gap: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-of-type(1){
+    color: white;
+    font-size: 2rem;
+}
+.figures>div>span:nth-of-type(2){
+    color: gray;
+    text-transform: uppercase;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+.hero-btn>:nth-child(1){
+    color: white;
+    background-color: orange;
+    width: 8rem;
+}
+
+.hero-btn>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid orange;
+}
+
+.right-h>.btn{
+    position: absolute;
+    right: 3rem;
+    left: 2rem;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #3c3f45;
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.heart-rate>img{
+    width: 2rem;
+}
+.heart-rate>:nth-child(1){
+    color: white;
+}
+
+.heart-rate>:nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+}
+.btn_heart{
+    right: 100px;
+    top:200px
+}
+.hero_image{
+    position:absolute;
+    top:10rem;
+    right:12rem;
+    width: 23rem;
+}
+.hero_image_back{
+    position: absolute;
+    top:4rem;
+    right:24rem;
+    width: 15rem;
+    z-index: -1;
+}
+.calories{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top:34rem;
+    right: 35rem;
+}
+.calories>img{
+    width: 3rem;
+}
+.calories > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calories >:nth-child(3){
+    color: white;
+    font-size: 1.5rem;
+}
+.calories >:nth-child(2){
+    color: var(--gray);
+}
+.blur-h{
+    width: 22rem;
+    height: 30rem;
+    left:0;
+}
+
+@media screen and (max-width:768px){
+    .Hero{
+       flex-direction:column;
+    }
+    .hero-blur{
+        width: 14rem;
+    }
+    .the-best-ad{
+        margin-top: 20px;
+        font-size: small;
+        align-self:center;
+        transform: (scale(0.8));
+    }
+    @keyframes animate1{
+        0% {left:0px;top:6px}
+        100%{left: 150px;top:6px;}
+    }
+    .hero-text{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text>div:nth-of-type(3){
+        font-weight: 200;
+        font-size: small;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .right-h{
+        position: relative;
+        background: none;
+    }
+    .heart-rate{
+        top:1rem;
+        left:2rem;
+    }
+    .figures>div>span:nth-of-type(1){
+        font-size: large;
+    }
+    .figures>div>span:nth-of-type(2){
+        font-size: small;
+    }
+    .right-h{
+        position: relative;
+        background: none;
+        flex-direction: column;
+    }
+    .heart-rate{
+        left:7rem;
+        top:-1rem;
+    }
+    .btn_heart{
+        top: 180px;
+    }
+    .calories{
+        position: relative;
+        top:22rem;
+        left:2rem;
+        width: 200px;
+    }
+    .calories>img{
+        width: 2rem;
+    }
+    .calories>div>:nth-child(2){
+        color: white;
+        font-size: 1rem;;
+    }
+    .hero_image{
+        position: relative;
+        width: 15rem;
+        left:7rem;
+        top:20rem;
+        align-self: center;
+    }
+    .hero_image_back{
+        width: 15rem;
+        left:2rem;
+        top:15rem;
+    }
+    @media screen and (max-width:1200px){
+        .hero_image{
+            position: relative;
+            margin-left: 3rem;
+        }
+    }
+}
